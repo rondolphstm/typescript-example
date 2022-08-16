@@ -48,4 +48,35 @@ return arr.reduce ((total, num,) => total + num)
 
 let numbers: number[] = [1,2,3,4,5,6]
 
-console.log(sum(numbers))
+// console.log(sum(numbers))
+
+let complexItem: any = {name:"rondolph"}
+
+complexItem.name = {name:"ronnie", hasDog: true}
+
+complexItem = {title: "professor"}
+complexItem ="it's a string"
+complexItem = 22
+
+// console.log("complexItem", complexItem)
+
+
+enum bloodType{
+    aPostive,
+    bPostive,
+    oNegative,
+    oPositive,
+}
+interface human {
+    name: string,
+    age: number,
+    height: number,
+    bloodType?: bloodType
+}
+
+const me: human ={
+    name: "ronnie",
+    age: 49,
+    // bloodType: bloodType.aPostive,
+    height: 6 * 12
+}
